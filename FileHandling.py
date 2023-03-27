@@ -16,16 +16,18 @@
 # programing_file.writelines(list_of_phrases)
 # programing_file.close()
 
-# pic = open("Tech Addicted.jpg","rb")
-# newpic = open("newpic.jpg","wb")
-# for i in pic:
-#     newpic.write(i)
+
+# with open("Tech Addicted.jpg","rb")as pic:
+#     with open("newpic.jpg","wb") as newpic:
+#         for i in pic:
+#             newpic.write(i)
+
 
 # import os
 # print(os.getcwd())
 # print(os.path.dirname(os.path.abspath(__file__)))
 # print(os.path.abspath(__file__))
-# file = open("random.txt")
+
 
 # import os
 # print(os.getcwd())
@@ -41,20 +43,18 @@
 #         break
 # File.close()
 
-# myFile = open(r"C:\Users\VAIO\amine\fun.txt", "w")
-# myFile.write("i just graduated from high school and have no idea what's next")
 
-# myFile.write("hello from python by pycharm")
-# print(myFile.readline())
+# with open(r"C:\Users\VAIO\amine\fun.txt", "w") as myFile:
+    # myFile.write("i just graduated from high school and have no idea what's next")
+    # myFile.write("hello from python by pycharm")
+    # print(myFile.readline())
 
-# myFile = open(r"C:\Users\VAIO\amine\fun.txt", "a")
-# myFile.write("AI")
 
-# myFile = open(r"C:\Users\VAIO\amine\fun.txt", "r")
-# print(myFile.seek(8))
-# print(myFile.read())
-# import os
-# os.remove(r"C:\Users\VAIO\amine\fun.txt")
+# with open(r"C:\Users\VAIO\amine\fun.txt", "r") as myFile:
+    # print(myFile.seek(8))
+    # print(myFile.read())
+    # import os
+    # os.remove(r"C:\Users\VAIO\amine\fun.txt")
 
 # from PIL import Image
 # myImage = Image.open(r"C:\Users\VAIO\amine\RainbowSkies_Banner.jpg")
