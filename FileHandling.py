@@ -1,21 +1,20 @@
-# programing = open("programing","a")
+# programing = open("programing.txt","r")
 # print(programing.readlines()[1])
 # programing.close()
 
 # for x in programing.readlines():
-#    print(x+ " fact")
+#     print(x)
 # programing.close()
 
 # print(programing.readable())
 
-# programing.write("i hope that by learning python i won't be facing the same difficulties when starting to learn a new language ")
-# programing.close()
 
 # programing_file =open("programing","w")
-# list_of_phrases = ("\nthis is a first line", "\nthis is a second line", "\nthis is a third line")
+# list_of_phrases = ("\nthis is a first line", "\nthis is a second line")
 # programing_file.writelines(list_of_phrases)
-# programing_file.close()
 
+# programing.write("Being Something in Process..")
+# programing.close()
 
 # with open("Tech Addicted.jpg","rb")as pic:
 #     with open("newpic.jpg","wb") as newpic:
@@ -79,7 +78,7 @@
 #     print(file_name.read())
 #     break
 #   except FileNotFoundError:
-#     print("something went wrong, please make sure the name and path given are valid")
+#     print("Please Make Sure The Name And Path Given Are Valid")
 #     tries -= 1
 #     print(f"you have {tries} tries left")
 #   except:
