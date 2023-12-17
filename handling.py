@@ -1,5 +1,5 @@
-import os
-os.chdir(os.path.dirname(os.path.realpath(__file__)))
+# import os
+# os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 
 ''' Opening Files, When We Open The File Using 'With' it Automatically Closes 
@@ -30,7 +30,8 @@ with open('test.txt','r') as f:
     As a Result, Nothing Gets Printed Out if You Try To Print Out The
     Content of f.read(). So We need to use The seek() Method To Reset 
     The File Pointer, We Can Use The tell() Method To Check What is The 
-    Current Position Of The File Pointer.                                                   ''' 
+    Current Position Of The File Pointer.                             '''
+
     #Specifying The Size Which We Want To Read Giving The read() Method an Arg
     print(f"The Pointer Before Using The seek() Method:  {f.tell()}") 
     f.seek(0)
@@ -71,7 +72,7 @@ with open('test.txt','r') as f:
 
 
 ''' Writing into Files '''
-''''''
+
 with open('test1.txt' ,'w') as f:
     # Writing a Text on a File
     f.write('test') # Now The Pointer is at The End Of The File Text
