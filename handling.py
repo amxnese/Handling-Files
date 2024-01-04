@@ -1,10 +1,46 @@
 # import os
 # os.chdir(os.path.dirname(os.path.realpath(__file__)))
+'''
+r (Read Mode):
+    Opens the file for reading.
+    The file pointer is placed at the beginning of the file.
+    If the file does not exist, it raises a FileNotFoundError.
 
+w (Write Mode):
 
-''' Opening Files, When We Open The File Using 'With' it Automatically Closes 
-The File When U're Done With it, That's Why it's Considered As a Good Practice. '''
+    Opens the file for writing.
+    Truncates the file to zero length or creates a new file if it doesn't exist.
+    The file pointer is placed at the beginning of the file.
+    
+a (Append Mode):
 
+    Opens the file for appending.
+    The file pointer is placed at the end of the file.
+    If the file doesn't exist, it creates a new file.
+
+r+ (Read and Write Mode):
+
+    Opens the file for both reading and writing.
+    The file pointer is placed at the beginning of the file.
+    Raises a FileNotFoundError if the file does not exist.
+    python
+    
+w+ (Write and Read Mode):
+
+    Opens the file for both writing and reading.
+    Truncates the file to zero length or creates a new file if it doesn't exist.
+    The file pointer is placed at the beginning of the file.
+
+a+ (Append and Read Mode):
+
+    Opens the file for both appending and reading.
+    The file pointer is placed at the end of the file.
+    If the file doesn't exist, it creates a new file.
+'''
+
+''' Opening Files, When We Open The File Using 'With' it Automatically
+Closes The File When You're Outside of The With Block, That's Why it's 
+Considered As a Good Practice. '''
 
 '''  Reading Files  '''
 with open('test.txt','r') as f:
