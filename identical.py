@@ -1,6 +1,6 @@
 def compare_files(file1_path, file2_path):
     try:
-        with open(file1_path, 'r') as file1, open(file2_path, 'r') as file2:
+        with open(file1_path, 'r') as file1, open(file2_path, 'r') as file2: 
             lines1 = file1.readlines()
             lines2 = file2.readlines()
 
